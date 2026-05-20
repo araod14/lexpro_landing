@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 40" role="img" aria-label="Cliente">
+  <g fill="#4A4A4A">
+    <path d="M8 30 L20 10 L32 30 Z"/>
+    <text x="40" y="26" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="18">APEX-CO</text>
+  </g>
+</svg>

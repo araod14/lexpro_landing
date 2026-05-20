@@ -1,0 +1,12 @@
+node_modules
+.next
+.git
+.gitignore
+.claude/
+.env*
+*.md
+Makefile
+coverage
+.DS_Store
+*.pem
+npm-debug.log*
