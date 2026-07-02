@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 40" role="img" aria-label="Cliente">
-  <g fill="#4A4A4A">
-    <circle cx="16" cy="20" r="10" />
-    <circle cx="26" cy="20" r="10" opacity="0.55" />
-    <text x="44" y="26" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="18">ORBIT</text>
-  </g>
-</svg>

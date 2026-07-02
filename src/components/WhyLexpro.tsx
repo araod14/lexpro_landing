@@ -15,11 +15,11 @@ export function WhyLexpro() {
             ¿Por qué Lexpro?
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold leading-tight tracking-tight text-ink-deep text-balance">
-            Un aliado tecnológico que entiende tu negocio
+            Un aliado que entiende tu industria
           </h2>
           <p className="mt-4 text-base text-ink-soft leading-relaxed">
-            No solo entregamos software: construimos relaciones de largo plazo con
-            equipos comprometidos con tus resultados.
+            No solo ejecutamos proyectos: construimos relaciones de largo plazo con
+            un equipo comprometido con tus resultados.
           </p>
 
           <ul className="mt-8 space-y-5">
@@ -95,29 +95,38 @@ function WhyIllustration({ className = "" }: { className?: string }) {
         <rect x="20" y="20" width="120" height="10" rx="3" fill="#1F2937" />
         <rect x="20" y="38" width="80" height="6" rx="2" fill="#9CA3AF" />
 
+        {/* Documento / estudio de factibilidad */}
         <g transform="translate(20,70)">
           <rect width="92" height="72" rx="10" fill="#E6F5F5" />
-          <rect x="12" y="14" width="40" height="6" rx="2" fill="#178585" />
-          <rect x="12" y="30" width="60" height="20" rx="4" fill="#1FA8A8" />
-          <rect x="12" y="56" width="30" height="6" rx="2" fill="#178585" />
+          <rect x="14" y="14" width="52" height="6" rx="2" fill="#178585" />
+          <rect x="14" y="28" width="64" height="4" rx="2" fill="#1FA8A8" opacity="0.6" />
+          <rect x="14" y="38" width="64" height="4" rx="2" fill="#1FA8A8" opacity="0.6" />
+          <rect x="14" y="48" width="44" height="4" rx="2" fill="#1FA8A8" opacity="0.6" />
+          <circle cx="66" cy="52" r="8" fill="#1FA8A8" />
+          <path d="M62 52 l3 3 l6 -6" stroke="#FFFFFF" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
         </g>
+        {/* Medidor / indicador técnico */}
         <g transform="translate(124,70)">
           <rect width="92" height="72" rx="10" fill="url(#why-card)" />
-          <rect x="12" y="14" width="40" height="6" rx="2" fill="#FFFFFF" opacity="0.8" />
-          <rect x="12" y="30" width="60" height="20" rx="4" fill="#FFFFFF" />
-          <rect x="12" y="56" width="30" height="6" rx="2" fill="#FFFFFF" opacity="0.8" />
+          <path d="M26 50 A20 20 0 0 1 66 50" fill="none" stroke="#FFFFFF" strokeOpacity="0.4" strokeWidth="6" strokeLinecap="round" />
+          <path d="M26 50 A20 20 0 0 1 56 33" fill="none" stroke="#FFFFFF" strokeWidth="6" strokeLinecap="round" />
+          <line x1="46" y1="50" x2="58" y2="38" stroke="#FFFFFF" strokeWidth="3" strokeLinecap="round" />
+          <circle cx="46" cy="50" r="4" fill="#FFFFFF" />
+          <rect x="30" y="60" width="32" height="5" rx="2" fill="#FFFFFF" opacity="0.85" />
         </g>
+        {/* Crecimiento / resultados */}
         <g transform="translate(228,70)">
           <rect width="92" height="72" rx="10" fill="#F7F9FA" />
-          <rect x="12" y="14" width="40" height="6" rx="2" fill="#9CA3AF" />
+          <rect x="14" y="14" width="36" height="5" rx="2" fill="#9CA3AF" />
           <polyline
-            points="12,58 28,46 44,52 60,36 76,42"
+            points="14,58 30,46 46,52 62,32 78,26"
             stroke="#1FA8A8"
             strokeWidth="2.5"
             fill="none"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
+          <path d="M70 26 l8 0 l0 8" stroke="#1FA8A8" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round" />
         </g>
       </g>
     </svg>
