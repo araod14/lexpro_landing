@@ -7,6 +7,7 @@ import { Process } from "@/components/Process";
 import { Industries } from "@/components/Industries";
 import { Testimonials } from "@/components/Testimonials";
 import { Metrics } from "@/components/Metrics";
+import { Careers } from "@/components/Careers";
 import { FinalCTA } from "@/components/FinalCTA";
 import { Footer } from "@/components/Footer";
 
@@ -23,6 +24,7 @@ export default function HomePage() {
         <Industries />
         <Testimonials />
         <Metrics />
+        <Careers />
         <FinalCTA />
       </main>
       <Footer />

@@ -47,8 +47,8 @@ export function Navbar() {
         </nav>
 
         <div className="hidden lg:block">
-          <Button href={CTA.demo} variant="primary" size="md">
-            Solicitar Demo
+          <Button href={CTA.contact} variant="primary" size="md">
+            Contáctanos
           </Button>
         </div>
 
@@ -85,12 +85,12 @@ export function Navbar() {
                 </a>
               ))}
               <Button
-                href={CTA.demo}
+                href={CTA.contact}
                 variant="primary"
                 size="md"
                 className="mt-2 w-full"
               >
-                Solicitar Demo
+                Contáctanos
               </Button>
             </Container>
           </motion.div>

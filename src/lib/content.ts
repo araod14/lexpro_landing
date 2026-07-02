@@ -1,18 +1,22 @@
 import {
   Code2,
   Workflow,
-  Plug,
   Lightbulb,
-  ShoppingBag,
-  Truck,
-  Banknote,
-  HeartPulse,
+  FileBarChart,
+  FolderKanban,
+  Fuel,
+  Zap,
+  Building2,
+  Mountain,
   Factory,
   Briefcase,
   Users,
   ShieldCheck,
-  Headphones,
+  ClipboardList,
   Rocket,
+  HeartHandshake,
+  TrendingUp,
+  GraduationCap,
   type LucideIcon,
 } from "lucide-react";
 
@@ -21,8 +25,9 @@ export type NavLink = { label: string; href: string };
 export const NAV_LINKS: NavLink[] = [
   { label: "Inicio", href: "#inicio" },
   { label: "Servicios", href: "#servicios" },
-  { label: "Soluciones", href: "#industrias" },
+  { label: "Industrias", href: "#industrias" },
   { label: "Sobre Nosotros", href: "#por-que" },
+  { label: "Trabaja con Nosotros", href: "#empleo" },
   { label: "Contacto", href: "#contacto" },
 ];
 
@@ -34,28 +39,34 @@ export type Service = {
 
 export const SERVICES: Service[] = [
   {
-    title: "Software a Medida (SaaS)",
+    title: "Consultoría y Asesoría Estratégica",
     description:
-      "Plataformas web personalizadas que se adaptan a la operación real de tu empresa, no al revés.",
-    Icon: Code2,
+      "Acompañamiento experto para tomar decisiones de negocio con criterio técnico y visión de industria.",
+    Icon: Lightbulb,
   },
   {
-    title: "Automatización de Procesos",
+    title: "Estudios de Factibilidad Técnica y Económica",
     description:
-      "RPA, integraciones y flujos de trabajo eficientes para eliminar tareas repetitivas y errores manuales.",
+      "Evaluamos la viabilidad de tus proyectos con análisis riguroso de riesgos, costos y retorno de inversión.",
+    Icon: FileBarChart,
+  },
+  {
+    title: "Gestión de Proyectos y Contratos",
+    description:
+      "Planificación, control y administración de proyectos y contratos para entregar en tiempo, alcance y presupuesto.",
+    Icon: FolderKanban,
+  },
+  {
+    title: "Tecnología y Automatización",
+    description:
+      "Automatización de procesos, integración de sistemas y soluciones tecnológicas que optimizan tu operación.",
     Icon: Workflow,
   },
   {
-    title: "Integración de Sistemas",
+    title: "Soluciones de Software",
     description:
-      "APIs, ERPs y CRMs conectados sin fricción para que la información fluya de punta a punta.",
-    Icon: Plug,
-  },
-  {
-    title: "Consultoría Tecnológica",
-    description:
-      "Diagnóstico y roadmap de transformación digital alineados a tus objetivos de negocio.",
-    Icon: Lightbulb,
+      "Desarrollo de software a medida y plataformas que se adaptan a la operación real de tu empresa.",
+    Icon: Code2,
   },
 ];
 
@@ -67,27 +78,27 @@ export type WhyBullet = {
 
 export const WHY_BULLETS: WhyBullet[] = [
   {
-    title: "Equipo experto en tecnología empresarial",
+    title: "Experiencia en la industria venezolana",
     description:
-      "Profesionales con experiencia comprobada en proyectos críticos de software y datos.",
+      "Conocimiento profundo de los sectores clave del país, con especial foco en petróleo y energía.",
     Icon: Users,
   },
   {
-    title: "Soluciones escalables y seguras",
+    title: "Rigor técnico y económico",
     description:
-      "Arquitecturas modernas que crecen contigo y cumplen con buenas prácticas de seguridad.",
+      "Estudios de factibilidad y análisis que sustentan cada decisión con datos y buenas prácticas de ingeniería.",
     Icon: ShieldCheck,
   },
   {
-    title: "Soporte continuo y personalizado",
+    title: "Gestión integral de proyectos y contratos",
     description:
-      "Acompañamiento real después del lanzamiento, no solo durante el desarrollo.",
-    Icon: Headphones,
+      "Control de alcance, tiempo y costo para que tus proyectos avancen con transparencia y previsibilidad.",
+    Icon: ClipboardList,
   },
   {
-    title: "Implementación ágil con metodologías modernas",
+    title: "Tecnología a la medida de tu operación",
     description:
-      "Entregas iterativas, transparencia total y resultados visibles desde la semana uno.",
+      "Automatización y software que se integran a tus procesos reales, no al revés.",
     Icon: Rocket,
   },
 ];
@@ -101,27 +112,27 @@ export type ProcessStep = {
 export const PROCESS_STEPS: ProcessStep[] = [
   {
     step: "01",
-    title: "Diagnóstico",
+    title: "Diagnóstico y asesoría",
     description:
-      "Entendemos tu negocio, mapeamos procesos y detectamos oportunidades de mejora.",
+      "Entendemos tu negocio y objetivos, mapeamos el contexto y definimos el reto a resolver.",
   },
   {
     step: "02",
-    title: "Diseño",
+    title: "Factibilidad y diseño",
     description:
-      "Definimos arquitectura, UX y plan de entrega validado contigo antes de escribir una línea de código.",
+      "Evaluamos viabilidad técnica y económica, y diseñamos la solución antes de ejecutar.",
   },
   {
     step: "03",
-    title: "Desarrollo",
+    title: "Ejecución y gestión",
     description:
-      "Construimos la solución en sprints cortos con demos frecuentes y feedback constante.",
+      "Implementamos y gestionamos el proyecto con control de alcance, tiempo, costo y calidad.",
   },
   {
     step: "04",
-    title: "Implementación y soporte",
+    title: "Operación y soporte",
     description:
-      "Despliegue, capacitación de tu equipo y soporte continuo para garantizar resultados.",
+      "Puesta en marcha, capacitación de tu equipo y acompañamiento continuo para garantizar resultados.",
   },
 ];
 
@@ -129,38 +140,53 @@ export type Industry = {
   title: string;
   description: string;
   Icon: LucideIcon;
+  image: string;
+  imageAlt: string;
 };
 
 export const INDUSTRIES: Industry[] = [
   {
-    title: "Retail",
-    description: "POS, inventarios y omnicanalidad para una operación sin fricción.",
-    Icon: ShoppingBag,
+    title: "Petróleo y Gas",
+    description:
+      "Consultoría, factibilidad, gestión de proyectos y tecnología para el sector hidrocarburos.",
+    Icon: Fuel,
+    image: "/images/ind-petroleo.jpg",
+    imageAlt: "Torre de refinería del sector petrolero",
   },
   {
-    title: "Logística",
-    description: "Trazabilidad, rutas y gestión de flota integrada en tiempo real.",
-    Icon: Truck,
+    title: "Energía y Electricidad",
+    description: "Estudios, proyectos y soluciones para generación, transmisión y distribución.",
+    Icon: Zap,
+    image: "/images/ind-energia.jpg",
+    imageAlt: "Subestación eléctrica de alta tensión",
   },
   {
-    title: "Finanzas",
-    description: "Conciliaciones, reportería y automatización contable confiable.",
-    Icon: Banknote,
-  },
-  {
-    title: "Salud",
-    description: "Expedientes, agendas y plataformas seguras para pacientes y staff.",
-    Icon: HeartPulse,
-  },
-  {
-    title: "Manufactura",
-    description: "MES, OEE e integración con ERP para producción inteligente.",
+    title: "Manufactura e Industria",
+    description: "Optimización de procesos, automatización e integración para la producción.",
     Icon: Factory,
+    image: "/images/ind-manufactura.jpg",
+    imageAlt: "Ingenieros en una planta de manufactura",
   },
   {
-    title: "Servicios",
-    description: "Gestión de clientes, contratos y operaciones recurrentes a escala.",
+    title: "Construcción e Infraestructura",
+    description: "Gestión de proyectos y contratos para obras e infraestructura de gran escala.",
+    Icon: Building2,
+    image: "/images/ind-construccion.jpg",
+    imageAlt: "Trabajadores de construcción en obra",
+  },
+  {
+    title: "Minería",
+    description: "Asesoría técnica, factibilidad y control de proyectos para el sector minero.",
+    Icon: Mountain,
+    image: "/images/ind-mineria.jpg",
+    imageAlt: "Camión minero en un yacimiento a cielo abierto",
+  },
+  {
+    title: "Comercio y Servicios",
+    description: "Software, automatización y gestión para operaciones comerciales y de servicios.",
     Icon: Briefcase,
+    image: "/images/ind-comercio.jpg",
+    imageAlt: "Almacén logístico con montacargas",
   },
 ];
 
@@ -172,29 +198,30 @@ export type Testimonial = {
   initials: string;
 };
 
+// Datos de ejemplo — reemplazar con testimonios reales.
 export const TESTIMONIALS: Testimonial[] = [
   {
     quote:
-      "Lexpro entendió nuestro negocio desde el primer día. La automatización que entregaron nos liberó horas críticas cada semana.",
+      "El estudio de factibilidad de Lexpro nos dio la claridad técnica y económica que necesitábamos para aprobar el proyecto con confianza.",
     name: "María Hernández",
-    role: "Gerente de Operaciones",
-    company: "Distribuidora Andes",
+    role: "Gerente de Proyectos",
+    company: "Operadora Andes",
     initials: "MH",
   },
   {
     quote:
-      "Pasamos de hojas de cálculo a una plataforma SaaS robusta en pocos meses. El acompañamiento fue impecable.",
+      "La gestión de contratos y el control de obra fueron impecables. Entregaron dentro de presupuesto y sin sorpresas.",
     name: "Carlos Rivero",
-    role: "Director de Tecnología",
-    company: "Grupo Caribe",
+    role: "Director de Ingeniería",
+    company: "Grupo Energético Caribe",
     initials: "CR",
   },
   {
     quote:
-      "La integración con nuestro ERP era el cuello de botella. Lexpro lo resolvió con criterio técnico y comercial.",
+      "Automatizaron procesos críticos de nuestra operación y nos acompañaron con criterio técnico de principio a fin.",
     name: "Andrea Pérez",
-    role: "CEO",
-    company: "LogiPro Venezuela",
+    role: "Gerente de Operaciones",
+    company: "Industrias del Orinoco",
     initials: "AP",
   },
 ];
@@ -206,18 +233,44 @@ export type Metric = {
   label: string;
 };
 
+// Datos de ejemplo — reemplazar con métricas reales.
 export const METRICS: Metric[] = [
-  { value: 50, prefix: "+", label: "Proyectos entregados" },
-  { value: 98, suffix: "%", label: "Satisfacción del cliente" },
-  { value: 24, suffix: "/7", label: "Soporte disponible" },
-  { value: 30, prefix: "+", suffix: "%", label: "Eficiencia promedio lograda" },
+  { value: 50, prefix: "+", label: "Proyectos gestionados" },
+  { value: 98, suffix: "%", label: "Satisfacción de clientes" },
+  { value: 15, prefix: "+", label: "Años de experiencia sectorial" },
+  { value: 6, prefix: "+", label: "Industrias atendidas" },
 ];
 
-export const TRUST_LOGOS = [
-  "client-1",
-  "client-2",
-  "client-3",
-  "client-4",
-  "client-5",
-  "client-6",
+export type CareerBenefit = {
+  title: string;
+  description: string;
+  Icon: LucideIcon;
+};
+
+export const CAREER_BENEFITS: CareerBenefit[] = [
+  {
+    title: "Excelente ambiente laboral",
+    description:
+      "Un equipo colaborativo, respetuoso y motivado, donde tu trabajo se valora y tus ideas se escuchan.",
+    Icon: HeartHandshake,
+  },
+  {
+    title: "Buenas remuneraciones",
+    description:
+      "Compensación competitiva y acorde a tu experiencia, con reconocimiento a tu desempeño.",
+    Icon: TrendingUp,
+  },
+  {
+    title: "Crecimiento profesional",
+    description:
+      "Formación continua y oportunidades reales de desarrollo dentro de una firma en expansión.",
+    Icon: GraduationCap,
+  },
+  {
+    title: "Proyectos retadores",
+    description:
+      "Participa en proyectos de alto impacto en la industria venezolana, especialmente en el sector petrolero.",
+    Icon: Rocket,
+  },
 ];
+

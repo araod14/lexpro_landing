@@ -10,12 +10,12 @@ export function Services() {
         <FadeIn>
           <SectionTitle
             eyebrow="Servicios"
-            title="Todo lo que tu empresa necesita para crecer en digital"
-            subtitle="Combinamos consultoría, desarrollo a medida e integración de sistemas para resolver tus retos de operación."
+            title="Servicios integrales para tu industria"
+            subtitle="Combinamos consultoría, ingeniería y tecnología para acompañar tus proyectos de principio a fin."
           />
         </FadeIn>
 
-        <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {SERVICES.map((service, idx) => {
             const Icon = service.Icon;
             return (

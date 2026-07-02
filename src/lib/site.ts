@@ -8,12 +8,13 @@ export const SITE = {
   shortName: "Lexpro",
   url: "https://lexpro.com.ve",
   rif: "J-507995348",
-  email: "contacto@lexpro.com.ve",
-  emailDemo: "demo@lexpro.com.ve",
-  phone: "+58 412-0000000",
-  whatsapp: "584120000000", // Solo dígitos, formato internacional
-  address: "Caracas, Venezuela",
-  founded: "2024",
+  email: "mbello@lexprosoluciones.com",
+  emailDemo: "mbello@lexprosoluciones.com",
+  emailCareers: "mbello@lexprosoluciones.com",
+  phone: "+58 424-8354898",
+  whatsapp: "584248354898", // Solo dígitos, formato internacional
+  address: "Barcelona, Venezuela",
+  founded: "2025",
   social: {
     linkedin: "https://www.linkedin.com/company/lexpro",
     instagram: "https://www.instagram.com/lexpro",
@@ -36,4 +37,9 @@ export const CTA = {
     "Hola Lexpro, quiero conocer más sobre sus servicios."
   )}`,
   email: `mailto:${SITE.email}`,
+  careers: `mailto:${SITE.emailCareers}?subject=${enc(
+    "Postulación de talento — Lexpro"
+  )}&body=${enc(
+    "Hola Lexpro,\n\nMe gustaría formar parte de su equipo. Adjunto mi CV.\n\nNombre:\nProfesión / Área:\nTeléfono:\nExperiencia:\n\nGracias."
+  )}`,
 } as const;

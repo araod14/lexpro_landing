@@ -8,23 +8,23 @@ const COLUMNS = [
     title: "Empresa",
     links: [
       { label: "Sobre Nosotros", href: "#por-que" },
-      { label: "Procesos", href: "#servicios" },
+      { label: "Trabaja con Nosotros", href: "#empleo" },
       { label: "Contacto", href: "#contacto" },
     ],
   },
   {
     title: "Servicios",
     links: [
-      { label: "Software a Medida", href: "#servicios" },
-      { label: "Automatización", href: "#servicios" },
-      { label: "Integración", href: "#servicios" },
-      { label: "Consultoría", href: "#servicios" },
+      { label: "Consultoría Estratégica", href: "#servicios" },
+      { label: "Estudios de Factibilidad", href: "#servicios" },
+      { label: "Gestión de Proyectos", href: "#servicios" },
+      { label: "Tecnología y Software", href: "#servicios" },
     ],
   },
   {
     title: "Recursos",
     links: [
-      { label: "Casos de uso", href: "#industrias" },
+      { label: "Industrias", href: "#industrias" },
       { label: "Testimonios", href: "#testimonios" },
       { label: "Soporte", href: CTA.contact, external: true },
     ],
@@ -40,8 +40,8 @@ export function Footer() {
           <div className="lg:col-span-2">
             <LexproLogo variant="light" className="h-10 w-auto" />
             <p className="mt-5 text-sm leading-relaxed text-white/70 max-w-sm">
-              Software a medida y automatización de procesos para empresas que
-              quieren crecer con eficiencia y tecnología confiable.
+              Consultoría, ingeniería y tecnología para las industrias de
+              Venezuela, con especial foco en el sector petrolero y energético.
             </p>
             <div className="mt-6 flex items-center gap-3">
               <a
@@ -98,7 +98,7 @@ export function Footer() {
           ))}
 
           {/* Contact column */}
-          <div>
+          <div className="lg:col-span-2">
             <h3 className="text-sm font-bold text-white uppercase tracking-wider">
               Contacto
             </h3>
@@ -107,7 +107,7 @@ export function Footer() {
                 <Mail size={16} className="mt-0.5 shrink-0 text-teal" aria-hidden="true" />
                 <a
                   href={`mailto:${SITE.email}`}
-                  className="hover:text-teal transition-colors break-all"
+                  className="hover:text-teal transition-colors break-words"
                 >
                   {SITE.email}
                 </a>

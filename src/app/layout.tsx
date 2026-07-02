@@ -13,25 +13,28 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: "Lexpro Soluciones — Software a medida y automatización empresarial",
+    default:
+      "Lexpro Soluciones — Consultoría, ingeniería y tecnología para la industria",
     template: "%s | Lexpro Soluciones",
   },
   description:
-    "Desarrollamos soluciones SaaS y automatizamos procesos empresariales para que tu negocio escale con eficiencia, seguridad y soporte continuo.",
+    "Consultoría y asesoría estratégica, estudios de factibilidad técnica y económica, gestión de proyectos y contratos, tecnología, automatización y software para las industrias de Venezuela, con foco en el sector petrolero.",
   keywords: [
-    "SaaS Venezuela",
+    "consultoría Venezuela",
+    "asesoría estratégica",
+    "estudios de factibilidad",
+    "gestión de proyectos y contratos",
+    "industria petrolera",
     "automatización de procesos",
     "software a medida",
-    "integración de sistemas",
-    "transformación digital",
-    "RPA",
     "Lexpro",
   ],
   authors: [{ name: "Lexpro Soluciones, C.A." }],
   openGraph: {
-    title: "Lexpro Soluciones — Software a medida y automatización",
+    title:
+      "Lexpro Soluciones — Consultoría, ingeniería y tecnología para la industria",
     description:
-      "Soluciones SaaS y automatización de procesos que escalan con tu empresa.",
+      "Consultoría, factibilidad, gestión de proyectos, tecnología y software para la industria venezolana, con foco en el sector petrolero.",
     url: SITE.url,
     siteName: SITE.name,
     locale: "es_VE",
@@ -41,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Lexpro Soluciones",
     description:
-      "Soluciones SaaS y automatización de procesos que escalan con tu empresa.",
+      "Consultoría, factibilidad, gestión de proyectos, tecnología y software para la industria venezolana, con foco en el sector petrolero.",
   },
   robots: { index: true, follow: true },
 };
@@ -50,6 +53,16 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: SITE.name,
+  description:
+    "Firma de consultoría, ingeniería y tecnología para las industrias de Venezuela, con especial foco en el sector petrolero.",
+  knowsAbout: [
+    "Consultoría y asesoría estratégica",
+    "Estudios de factibilidad técnica y económica",
+    "Gestión de proyectos y contratos",
+    "Tecnología y automatización",
+    "Soluciones de software",
+    "Industria petrolera",
+  ],
   url: SITE.url,
   email: SITE.email,
   telephone: SITE.phone,

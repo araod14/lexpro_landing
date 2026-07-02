@@ -30,10 +30,10 @@ export function FinalCTA() {
 
             <div className="relative">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight tracking-tight text-balance">
-                ¿Listo para automatizar tu negocio?
+                ¿Tienes un proyecto o reto en tu industria?
               </h2>
               <p className="mx-auto mt-4 max-w-xl text-base sm:text-lg text-white/90">
-                Cuéntanos tu reto y diseñamos una solución a tu medida. Sin compromiso.
+                Cuéntanos tu necesidad y diseñamos una solución a tu medida. Sin compromiso.
               </p>
               <div className="mt-9 flex flex-col sm:flex-row gap-3 justify-center">
                 <Button href={CTA.consult} variant="light" size="lg">
@@ -41,12 +41,12 @@ export function FinalCTA() {
                   <ArrowRight size={18} aria-hidden="true" />
                 </Button>
                 <Button
-                  href={CTA.demo}
+                  href={CTA.email}
                   variant="ghost"
                   size="lg"
                   className="!text-white hover:!bg-white/10"
                 >
-                  Solicitar Demo
+                  Escríbenos
                 </Button>
               </div>
             </div>
