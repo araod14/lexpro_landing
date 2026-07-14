@@ -1,11 +1,9 @@
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { FadeIn } from "@/components/ui/FadeIn";
-import { Button } from "@/components/ui/Button";
+import { CareersForm } from "@/components/CareersForm";
 import { CAREER_BENEFITS } from "@/lib/content";
-import { CTA } from "@/lib/site";
 
 export function Careers() {
   return (
@@ -56,15 +54,12 @@ export function Careers() {
         </div>
 
         <FadeIn delay={0.1}>
-          <div className="mt-12 flex flex-col items-center text-center gap-4">
-            <p className="max-w-xl text-base text-ink-soft">
-              ¿Quieres formar parte de Lexpro? Envíanos tu CV y cuéntanos en qué
-              área te gustaría aportar.
+          <div className="mt-16">
+            <p className="mx-auto mb-8 max-w-xl text-center text-base text-ink-soft">
+              ¿Quieres formar parte de Lexpro? Completa el formulario, elige el
+              puesto al que postulas y adjunta tu CV.
             </p>
-            <Button href={CTA.careers} variant="primary" size="lg">
-              Envía tu CV
-              <ArrowRight size={18} aria-hidden="true" />
-            </Button>
+            <CareersForm />
           </div>
         </FadeIn>
       </Container>

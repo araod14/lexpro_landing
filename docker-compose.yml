@@ -7,6 +7,13 @@ services:
       - "3000:3000"
     environment:
       - NODE_ENV=production
+      # Credenciales SMTP para el formulario de postulaciones (ver .env.example).
+      # Definidas en un archivo .env junto a este compose (no versionado).
+      - SMTP_HOST=${SMTP_HOST}
+      - SMTP_PORT=${SMTP_PORT}
+      - SMTP_USER=${SMTP_USER}
+      - SMTP_PASS=${SMTP_PASS}
+      - SMTP_FROM=${SMTP_FROM}
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "wget", "-qO-", "http://localhost:3000/"]

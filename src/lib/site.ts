@@ -11,6 +11,11 @@ export const SITE = {
   email: "mbello@lexprosoluciones.com",
   emailDemo: "mbello@lexprosoluciones.com",
   emailCareers: "mbello@lexprosoluciones.com",
+  // Destinatarios de las postulaciones enviadas desde el formulario de empleo.
+  careersRecipients: [
+    "darao@lexprosoluciones.com",
+    "mbello@lexprosoluciones.com",
+  ],
   phone: "+58 424-8354898",
   whatsapp: "584248354898", // Solo dígitos, formato internacional
   address: "Barcelona, Venezuela",
